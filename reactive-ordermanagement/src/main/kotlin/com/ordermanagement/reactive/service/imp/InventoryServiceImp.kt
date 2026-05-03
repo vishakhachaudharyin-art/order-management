@@ -28,6 +28,7 @@ class InventoryServiceImp(
 
                 println("AFTER RESTOCK -> ${inventory.quantity}")
 
+
                 inventoryRepository.save(inventory)
             }
             .doOnSuccess {
