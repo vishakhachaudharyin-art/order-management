@@ -27,6 +27,7 @@ class InventoryServiceImp(
                 inventory.quantity += quantity
 
                 println("AFTER RESTOCK -> ${inventory.quantity}")
+                println("AFTER RESTOCK PJ -> ${inventory.quantity}")
 
 
                 inventoryRepository.save(inventory)
